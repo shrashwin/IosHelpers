@@ -15,8 +15,6 @@ class BaseViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let helperItems = ["Reachability"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,24 +32,32 @@ extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: HelperItemsTableViewCell.cellIdentifier) as? HelperItemsTableViewCell
-        cell?.helperItemLabel.text = helperItems[indexPath.row]
+        cell?.helperItemLabel.text = HelperItems.items[indexPath.row].descriptionTxt
         return cell!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return helperItems.count
+        return HelperItems.items.count
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let storyBoard = UIStoryboard(name: "Reachability", bundle: nil)
+        switch HelperItems.items[indexPath.row] {
         
-        if let reachabilityVC = storyBoard.instantiateViewController(withIdentifier: "ReachabilityViewController") as? ReachabilityViewController {
-            navigationController?.pushViewController(reachabilityVC, animated: true)
+            case .Reachability:
+                let reachabilityVC =  ReachabilityViewController.instantiateFrom(appStoryBoard: .Reachability)
+                navigationController?.pushViewController(reachabilityVC, animated: true)
+            
+        case .KeyboardAvoidingViewController:
+            let keyboardAvoidingVC = KeyBoardAvoidingExampleViewController.instantiateFrom(appStoryBoard: .KeyboardAvoiding)
+            navigationController?.pushViewController(keyboardAvoidingVC, animated: true)
+       
         }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
