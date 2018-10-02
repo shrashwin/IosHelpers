@@ -12,13 +12,15 @@ import Foundation
 enum HelperItems {
     
     case Reachability
+    case MediaPicker
 
-    static let items = [Reachability]
+    static let items = [Reachability, MediaPicker]
     
     var descriptionTxt: String {
         switch self {
         
         case .Reachability: return "Reachability"
+        case .MediaPicker: return "Media Picker"
         
         }
     }
