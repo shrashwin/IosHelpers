@@ -23,6 +23,12 @@
 		5DF4AA8921635FDF005BEFEB /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8821635FDF005BEFEB /* UIViewControllerExtension.swift */; };
 		5DF4AA8B21636278005BEFEB /* StoryBoardHelperManual.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8A21636278005BEFEB /* StoryBoardHelperManual.rtf */; };
 		5DF4AA8D21636331005BEFEB /* HelperItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8C21636331005BEFEB /* HelperItems.swift */; };
+		5DF4AAAB21638981005BEFEB /* KeyboardAvoidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AAAA21638981005BEFEB /* KeyboardAvoidingViewController.swift */; };
+		5DF4AAAF216389B2005BEFEB /* AccessoryBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AAAD216389B2005BEFEB /* AccessoryBar.xib */; };
+		5DF4AAB0216389B2005BEFEB /* AccessoryBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AAAE216389B2005BEFEB /* AccessoryBar.swift */; };
+		5DF4AAB221638AC4005BEFEB /* KeyboardAvoidingViewController Manual.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AAB121638AC4005BEFEB /* KeyboardAvoidingViewController Manual.rtf */; };
+		5DF4AAB421638B94005BEFEB /* KeyBoardAvoidingExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AAB321638B94005BEFEB /* KeyBoardAvoidingExampleViewController.swift */; };
+		5DF4AAB721638BA7005BEFEB /* KeyboardAvoiding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AAB621638BA7005BEFEB /* KeyboardAvoiding.storyboard */; };
 		FA84C7670EC62104F8AA81A2 /* Pods_IosHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA27466D25C3697913DA68E /* Pods_IosHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +52,12 @@
 		5DF4AA8821635FDF005BEFEB /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5DF4AA8A21636278005BEFEB /* StoryBoardHelperManual.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = StoryBoardHelperManual.rtf; sourceTree = "<group>"; };
 		5DF4AA8C21636331005BEFEB /* HelperItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperItems.swift; sourceTree = "<group>"; };
+		5DF4AAAA21638981005BEFEB /* KeyboardAvoidingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoidingViewController.swift; sourceTree = "<group>"; };
+		5DF4AAAD216389B2005BEFEB /* AccessoryBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccessoryBar.xib; sourceTree = "<group>"; };
+		5DF4AAAE216389B2005BEFEB /* AccessoryBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryBar.swift; sourceTree = "<group>"; };
+		5DF4AAB121638AC4005BEFEB /* KeyboardAvoidingViewController Manual.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "KeyboardAvoidingViewController Manual.rtf"; sourceTree = "<group>"; };
+		5DF4AAB321638B94005BEFEB /* KeyBoardAvoidingExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardAvoidingExampleViewController.swift; sourceTree = "<group>"; };
+		5DF4AAB621638BA7005BEFEB /* KeyboardAvoiding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KeyboardAvoiding.storyboard; sourceTree = "<group>"; };
 		713DDE5117046208BFD46A1A /* Pods-IosHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		E8F26EB79F488220D9A632E2 /* Pods-IosHelpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +115,7 @@
 				5DF4AA8721635FD1005BEFEB /* Extensions */,
 				5DF4AA8421635F4E005BEFEB /* StoryBoardHelper */,
 				5DDC0C67216344A500C4E339 /* Reachability */,
+				5DF4AAA8216388AF005BEFEB /* KeyboardAvoiding ViewController */,
 				5DDC0C5F2163412500C4E339 /* Base View Controller */,
 				5DDC0C4D21633BB900C4E339 /* AppDelegate.swift */,
 				5DDC0C5121633BB900C4E339 /* Main.storyboard */,
@@ -159,6 +172,35 @@
 				5DF4AA8821635FDF005BEFEB /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5DF4AAA8216388AF005BEFEB /* KeyboardAvoiding ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DF4AAA9216388C5005BEFEB /* KeyboardAvoidingController Library */,
+				5DF4AAB321638B94005BEFEB /* KeyBoardAvoidingExampleViewController.swift */,
+				5DF4AAB621638BA7005BEFEB /* KeyboardAvoiding.storyboard */,
+			);
+			path = "KeyboardAvoiding ViewController";
+			sourceTree = "<group>";
+		};
+		5DF4AAA9216388C5005BEFEB /* KeyboardAvoidingController Library */ = {
+			isa = PBXGroup;
+			children = (
+				5DF4AAAC2163898E005BEFEB /* AccessoryBar */,
+				5DF4AAAA21638981005BEFEB /* KeyboardAvoidingViewController.swift */,
+				5DF4AAB121638AC4005BEFEB /* KeyboardAvoidingViewController Manual.rtf */,
+			);
+			path = "KeyboardAvoidingController Library";
+			sourceTree = "<group>";
+		};
+		5DF4AAAC2163898E005BEFEB /* AccessoryBar */ = {
+			isa = PBXGroup;
+			children = (
+				5DF4AAAE216389B2005BEFEB /* AccessoryBar.swift */,
+				5DF4AAAD216389B2005BEFEB /* AccessoryBar.xib */,
+			);
+			path = AccessoryBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +265,11 @@
 			files = (
 				5DDC0C5821633BBA00C4E339 /* LaunchScreen.storyboard in Resources */,
 				5DF4AA8B21636278005BEFEB /* StoryBoardHelperManual.rtf in Resources */,
+				5DF4AAB721638BA7005BEFEB /* KeyboardAvoiding.storyboard in Resources */,
+				5DF4AAAF216389B2005BEFEB /* AccessoryBar.xib in Resources */,
 				5DDC0C5521633BBA00C4E339 /* Assets.xcassets in Resources */,
 				5DDC0C69216344D100C4E339 /* Reachability Document.rtf in Resources */,
+				5DF4AAB221638AC4005BEFEB /* KeyboardAvoidingViewController Manual.rtf in Resources */,
 				5DF4AA8321635A77005BEFEB /* Reachability.storyboard in Resources */,
 				5DDC0C66216342B300C4E339 /* HelperItemsTableViewCell.xib in Resources */,
 				5DDC0C5321633BB900C4E339 /* Main.storyboard in Resources */,
@@ -281,11 +326,14 @@
 				5DF4AA7E21634BC5005BEFEB /* ReachabilityListenerProtocol.swift in Sources */,
 				5DDC0C6B2163464300C4E339 /* ReachabilityManager.swift in Sources */,
 				5DF4AA8021634CD7005BEFEB /* ReachabilityViewController.swift in Sources */,
+				5DF4AAAB21638981005BEFEB /* KeyboardAvoidingViewController.swift in Sources */,
 				5DF4AA8921635FDF005BEFEB /* UIViewControllerExtension.swift in Sources */,
 				5DF4AA8D21636331005BEFEB /* HelperItems.swift in Sources */,
 				5DDC0C65216342B200C4E339 /* HelperItemsTableViewCell.swift in Sources */,
 				5DDC0C4E21633BB900C4E339 /* AppDelegate.swift in Sources */,
 				5DDC0C612163413800C4E339 /* BaseViewController.swift in Sources */,
+				5DF4AAB0216389B2005BEFEB /* AccessoryBar.swift in Sources */,
+				5DF4AAB421638B94005BEFEB /* KeyBoardAvoidingExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
