@@ -11,6 +11,9 @@
 		5DDC0C5321633BB900C4E339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDC0C5121633BB900C4E339 /* Main.storyboard */; };
 		5DDC0C5521633BBA00C4E339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DDC0C5421633BBA00C4E339 /* Assets.xcassets */; };
 		5DDC0C5821633BBA00C4E339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDC0C5621633BBA00C4E339 /* LaunchScreen.storyboard */; };
+		5DDC0C612163413800C4E339 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDC0C602163413800C4E339 /* BaseViewController.swift */; };
+		5DDC0C65216342B200C4E339 /* HelperItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDC0C63216342B200C4E339 /* HelperItemsTableViewCell.swift */; };
+		5DDC0C66216342B300C4E339 /* HelperItemsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DDC0C64216342B200C4E339 /* HelperItemsTableViewCell.xib */; };
 		FA84C7670EC62104F8AA81A2 /* Pods_IosHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA27466D25C3697913DA68E /* Pods_IosHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +25,9 @@
 		5DDC0C5421633BBA00C4E339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DDC0C5721633BBA00C4E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DDC0C5921633BBA00C4E339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DDC0C602163413800C4E339 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5DDC0C63216342B200C4E339 /* HelperItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperItemsTableViewCell.swift; sourceTree = "<group>"; };
+		5DDC0C64216342B200C4E339 /* HelperItemsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelperItemsTableViewCell.xib; sourceTree = "<group>"; };
 		713DDE5117046208BFD46A1A /* Pods-IosHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		E8F26EB79F488220D9A632E2 /* Pods-IosHelpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +82,7 @@
 		5DDC0C4C21633BB900C4E339 /* IosHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				5DDC0C5F2163412500C4E339 /* Base View Controller */,
 				5DDC0C4D21633BB900C4E339 /* AppDelegate.swift */,
 				5DDC0C5121633BB900C4E339 /* Main.storyboard */,
 				5DDC0C5421633BBA00C4E339 /* Assets.xcassets */,
@@ -83,6 +90,24 @@
 				5DDC0C5921633BBA00C4E339 /* Info.plist */,
 			);
 			path = IosHelpers;
+			sourceTree = "<group>";
+		};
+		5DDC0C5F2163412500C4E339 /* Base View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5DDC0C622163429600C4E339 /* Base View Table Cell */,
+				5DDC0C602163413800C4E339 /* BaseViewController.swift */,
+			);
+			path = "Base View Controller";
+			sourceTree = "<group>";
+		};
+		5DDC0C622163429600C4E339 /* Base View Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5DDC0C63216342B200C4E339 /* HelperItemsTableViewCell.swift */,
+				5DDC0C64216342B200C4E339 /* HelperItemsTableViewCell.xib */,
+			);
+			path = "Base View Table Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +171,7 @@
 			files = (
 				5DDC0C5821633BBA00C4E339 /* LaunchScreen.storyboard in Resources */,
 				5DDC0C5521633BBA00C4E339 /* Assets.xcassets in Resources */,
+				5DDC0C66216342B300C4E339 /* HelperItemsTableViewCell.xib in Resources */,
 				5DDC0C5321633BB900C4E339 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,7 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DDC0C65216342B200C4E339 /* HelperItemsTableViewCell.swift in Sources */,
 				5DDC0C4E21633BB900C4E339 /* AppDelegate.swift in Sources */,
+				5DDC0C612163413800C4E339 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
