@@ -54,6 +54,10 @@ extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
         case .KeyboardAvoidingViewController:
             let keyboardAvoidingVC = KeyBoardAvoidingExampleViewController.instantiateFrom(appStoryBoard: .KeyboardAvoiding)
             navigationController?.pushViewController(keyboardAvoidingVC, animated: true)
+            
+        case .LocationService:
+            let locationServiceVC = LocationServiceExampleViewController.instantiateFrom(appStoryBoard: .LocationService)
+            navigationController?.pushViewController(locationServiceVC, animated: true)
        
         }
         
