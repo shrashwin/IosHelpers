@@ -50,6 +50,10 @@ extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
             case .Reachability:
                 let reachabilityVC =  ReachabilityViewController.instantiateFrom(appStoryBoard: .Reachability)
                 navigationController?.pushViewController(reachabilityVC, animated: true)
+            
+        case .MediaPicker:
+            let mediaPicker = MediaPickerViewController.instantiateFrom(appStoryBoard: .MediaPicker)
+            navigationController?.pushViewController(mediaPicker, animated: true)
        
         }
         

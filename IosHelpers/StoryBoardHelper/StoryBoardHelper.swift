@@ -12,6 +12,7 @@ enum StoryboardType: String {
     
     case MainModule = "MainModule"
     case Reachability = "Reachability"
+    case MediaPicker = "MediaPicker"
     
     var instance : UIStoryboard {
         return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
