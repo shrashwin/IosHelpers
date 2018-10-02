@@ -18,6 +18,7 @@
 		5DDC0C6B2163464300C4E339 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDC0C6A2163464300C4E339 /* ReachabilityManager.swift */; };
 		5DF4AA7E21634BC5005BEFEB /* ReachabilityListenerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA7D21634BC5005BEFEB /* ReachabilityListenerProtocol.swift */; };
 		5DF4AA8021634CD7005BEFEB /* ReachabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA7F21634CD7005BEFEB /* ReachabilityViewController.swift */; };
+		5DF4AA8321635A77005BEFEB /* Reachability.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8221635A77005BEFEB /* Reachability.storyboard */; };
 		FA84C7670EC62104F8AA81A2 /* Pods_IosHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA27466D25C3697913DA68E /* Pods_IosHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		5DDC0C6A2163464300C4E339 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		5DF4AA7D21634BC5005BEFEB /* ReachabilityListenerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityListenerProtocol.swift; sourceTree = "<group>"; };
 		5DF4AA7F21634CD7005BEFEB /* ReachabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityViewController.swift; sourceTree = "<group>"; };
+		5DF4AA8221635A77005BEFEB /* Reachability.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reachability.storyboard; sourceTree = "<group>"; };
 		713DDE5117046208BFD46A1A /* Pods-IosHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		E8F26EB79F488220D9A632E2 /* Pods-IosHelpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 				5DDC0C68216344D100C4E339 /* Reachability Document.rtf */,
 				5DF4AA7D21634BC5005BEFEB /* ReachabilityListenerProtocol.swift */,
 				5DF4AA7F21634CD7005BEFEB /* ReachabilityViewController.swift */,
+				5DF4AA8221635A77005BEFEB /* Reachability.storyboard */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				5DDC0C5821633BBA00C4E339 /* LaunchScreen.storyboard in Resources */,
 				5DDC0C5521633BBA00C4E339 /* Assets.xcassets in Resources */,
 				5DDC0C69216344D100C4E339 /* Reachability Document.rtf in Resources */,
+				5DF4AA8321635A77005BEFEB /* Reachability.storyboard in Resources */,
 				5DDC0C66216342B300C4E339 /* HelperItemsTableViewCell.xib in Resources */,
 				5DDC0C5321633BB900C4E339 /* Main.storyboard in Resources */,
 			);
