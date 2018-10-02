@@ -19,6 +19,10 @@
 		5DF4AA7E21634BC5005BEFEB /* ReachabilityListenerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA7D21634BC5005BEFEB /* ReachabilityListenerProtocol.swift */; };
 		5DF4AA8021634CD7005BEFEB /* ReachabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA7F21634CD7005BEFEB /* ReachabilityViewController.swift */; };
 		5DF4AA8321635A77005BEFEB /* Reachability.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8221635A77005BEFEB /* Reachability.storyboard */; };
+		5DF4AA8621635F87005BEFEB /* StoryBoardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8521635F87005BEFEB /* StoryBoardHelper.swift */; };
+		5DF4AA8921635FDF005BEFEB /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8821635FDF005BEFEB /* UIViewControllerExtension.swift */; };
+		5DF4AA8B21636278005BEFEB /* StoryBoardHelperManual.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8A21636278005BEFEB /* StoryBoardHelperManual.rtf */; };
+		5DF4AA8D21636331005BEFEB /* HelperItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8C21636331005BEFEB /* HelperItems.swift */; };
 		FA84C7670EC62104F8AA81A2 /* Pods_IosHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA27466D25C3697913DA68E /* Pods_IosHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,10 @@
 		5DF4AA7D21634BC5005BEFEB /* ReachabilityListenerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityListenerProtocol.swift; sourceTree = "<group>"; };
 		5DF4AA7F21634CD7005BEFEB /* ReachabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityViewController.swift; sourceTree = "<group>"; };
 		5DF4AA8221635A77005BEFEB /* Reachability.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reachability.storyboard; sourceTree = "<group>"; };
+		5DF4AA8521635F87005BEFEB /* StoryBoardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardHelper.swift; sourceTree = "<group>"; };
+		5DF4AA8821635FDF005BEFEB /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		5DF4AA8A21636278005BEFEB /* StoryBoardHelperManual.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = StoryBoardHelperManual.rtf; sourceTree = "<group>"; };
+		5DF4AA8C21636331005BEFEB /* HelperItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperItems.swift; sourceTree = "<group>"; };
 		713DDE5117046208BFD46A1A /* Pods-IosHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		E8F26EB79F488220D9A632E2 /* Pods-IosHelpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +100,8 @@
 		5DDC0C4C21633BB900C4E339 /* IosHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				5DF4AA8721635FD1005BEFEB /* Extensions */,
+				5DF4AA8421635F4E005BEFEB /* StoryBoardHelper */,
 				5DDC0C67216344A500C4E339 /* Reachability */,
 				5DDC0C5F2163412500C4E339 /* Base View Controller */,
 				5DDC0C4D21633BB900C4E339 /* AppDelegate.swift */,
@@ -108,6 +118,7 @@
 			children = (
 				5DDC0C622163429600C4E339 /* Base View Table Cell */,
 				5DDC0C602163413800C4E339 /* BaseViewController.swift */,
+				5DF4AA8C21636331005BEFEB /* HelperItems.swift */,
 			);
 			path = "Base View Controller";
 			sourceTree = "<group>";
@@ -131,6 +142,23 @@
 				5DF4AA8221635A77005BEFEB /* Reachability.storyboard */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		5DF4AA8421635F4E005BEFEB /* StoryBoardHelper */ = {
+			isa = PBXGroup;
+			children = (
+				5DF4AA8521635F87005BEFEB /* StoryBoardHelper.swift */,
+				5DF4AA8A21636278005BEFEB /* StoryBoardHelperManual.rtf */,
+			);
+			path = StoryBoardHelper;
+			sourceTree = "<group>";
+		};
+		5DF4AA8721635FD1005BEFEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5DF4AA8821635FDF005BEFEB /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DDC0C5821633BBA00C4E339 /* LaunchScreen.storyboard in Resources */,
+				5DF4AA8B21636278005BEFEB /* StoryBoardHelperManual.rtf in Resources */,
 				5DDC0C5521633BBA00C4E339 /* Assets.xcassets in Resources */,
 				5DDC0C69216344D100C4E339 /* Reachability Document.rtf in Resources */,
 				5DF4AA8321635A77005BEFEB /* Reachability.storyboard in Resources */,
@@ -248,9 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF4AA8621635F87005BEFEB /* StoryBoardHelper.swift in Sources */,
 				5DF4AA7E21634BC5005BEFEB /* ReachabilityListenerProtocol.swift in Sources */,
 				5DDC0C6B2163464300C4E339 /* ReachabilityManager.swift in Sources */,
 				5DF4AA8021634CD7005BEFEB /* ReachabilityViewController.swift in Sources */,
+				5DF4AA8921635FDF005BEFEB /* UIViewControllerExtension.swift in Sources */,
+				5DF4AA8D21636331005BEFEB /* HelperItems.swift in Sources */,
 				5DDC0C65216342B200C4E339 /* HelperItemsTableViewCell.swift in Sources */,
 				5DDC0C4E21633BB900C4E339 /* AppDelegate.swift in Sources */,
 				5DDC0C612163413800C4E339 /* BaseViewController.swift in Sources */,
