@@ -7,5 +7,6 @@ target 'IosHelpers' do
 
   # Pods for IosHelpers
   pod 'ReachabilitySwift', '~> 3'
+  pod 'TOCropViewController'
 
 end

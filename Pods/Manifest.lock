@@ -1,16 +1,20 @@
 PODS:
   - ReachabilitySwift (3)
+  - TOCropViewController (2.3.6)
 
 DEPENDENCIES:
   - ReachabilitySwift (~> 3)
+  - TOCropViewController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ReachabilitySwift
+    - TOCropViewController
 
 SPEC CHECKSUMS:
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  TOCropViewController: 6d972f2c609372312648f96758e13a7f689efbc0
 
-PODFILE CHECKSUM: c4965b2a67a011d7af7862ada3b2812899bda2f4
+PODFILE CHECKSUM: 071875f3f12230e2a96814cabaee278a3b506f1e
 
 COCOAPODS: 1.5.3

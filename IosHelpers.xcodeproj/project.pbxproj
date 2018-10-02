@@ -23,6 +23,14 @@
 		5DF4AA8921635FDF005BEFEB /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8821635FDF005BEFEB /* UIViewControllerExtension.swift */; };
 		5DF4AA8B21636278005BEFEB /* StoryBoardHelperManual.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8A21636278005BEFEB /* StoryBoardHelperManual.rtf */; };
 		5DF4AA8D21636331005BEFEB /* HelperItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA8C21636331005BEFEB /* HelperItems.swift */; };
+		5DF4AA922163660E005BEFEB /* MediaPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AA912163660E005BEFEB /* MediaPicker.storyboard */; };
+		5DF4AA9421636625005BEFEB /* MediaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA9321636625005BEFEB /* MediaPickerViewController.swift */; };
+		5DF4AA9A2163687C005BEFEB /* Media Picker Manual.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AA982163687C005BEFEB /* Media Picker Manual.rtf */; };
+		5DF4AA9B2163687C005BEFEB /* MediaPickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA992163687C005BEFEB /* MediaPickerProtocol.swift */; };
+		5DF4AA9D21636892005BEFEB /* MediaPickerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA9C21636892005BEFEB /* MediaPickerEnums.swift */; };
+		5DF4AAA421636ABA005BEFEB /* MediaPickerHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AAA221636ABA005BEFEB /* MediaPickerHelperViewController.swift */; };
+		5DF4AAA521636ABA005BEFEB /* MediaPickerHelperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AAA321636ABA005BEFEB /* MediaPickerHelperViewController.xib */; };
+		5DF4AAA721636F39005BEFEB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AAA621636F39005BEFEB /* Constants.swift */; };
 		FA84C7670EC62104F8AA81A2 /* Pods_IosHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA27466D25C3697913DA68E /* Pods_IosHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +54,14 @@
 		5DF4AA8821635FDF005BEFEB /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5DF4AA8A21636278005BEFEB /* StoryBoardHelperManual.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = StoryBoardHelperManual.rtf; sourceTree = "<group>"; };
 		5DF4AA8C21636331005BEFEB /* HelperItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperItems.swift; sourceTree = "<group>"; };
+		5DF4AA912163660E005BEFEB /* MediaPicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MediaPicker.storyboard; sourceTree = "<group>"; };
+		5DF4AA9321636625005BEFEB /* MediaPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerViewController.swift; sourceTree = "<group>"; };
+		5DF4AA982163687C005BEFEB /* Media Picker Manual.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Media Picker Manual.rtf"; sourceTree = "<group>"; };
+		5DF4AA992163687C005BEFEB /* MediaPickerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerProtocol.swift; sourceTree = "<group>"; };
+		5DF4AA9C21636892005BEFEB /* MediaPickerEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerEnums.swift; sourceTree = "<group>"; };
+		5DF4AAA221636ABA005BEFEB /* MediaPickerHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerHelperViewController.swift; sourceTree = "<group>"; };
+		5DF4AAA321636ABA005BEFEB /* MediaPickerHelperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaPickerHelperViewController.xib; sourceTree = "<group>"; };
+		5DF4AAA621636F39005BEFEB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		713DDE5117046208BFD46A1A /* Pods-IosHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		E8F26EB79F488220D9A632E2 /* Pods-IosHelpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,12 +119,14 @@
 				5DF4AA8721635FD1005BEFEB /* Extensions */,
 				5DF4AA8421635F4E005BEFEB /* StoryBoardHelper */,
 				5DDC0C67216344A500C4E339 /* Reachability */,
+				5DF4AA8E21636565005BEFEB /* Media Picker */,
 				5DDC0C5F2163412500C4E339 /* Base View Controller */,
 				5DDC0C4D21633BB900C4E339 /* AppDelegate.swift */,
 				5DDC0C5121633BB900C4E339 /* Main.storyboard */,
 				5DDC0C5421633BBA00C4E339 /* Assets.xcassets */,
 				5DDC0C5621633BBA00C4E339 /* LaunchScreen.storyboard */,
 				5DDC0C5921633BBA00C4E339 /* Info.plist */,
+				5DF4AAA621636F39005BEFEB /* Constants.swift */,
 			);
 			path = IosHelpers;
 			sourceTree = "<group>";
@@ -159,6 +177,28 @@
 				5DF4AA8821635FDF005BEFEB /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5DF4AA8E21636565005BEFEB /* Media Picker */ = {
+			isa = PBXGroup;
+			children = (
+				5DF4AA9721636855005BEFEB /* Media Picker Library */,
+				5DF4AA912163660E005BEFEB /* MediaPicker.storyboard */,
+				5DF4AA9321636625005BEFEB /* MediaPickerViewController.swift */,
+			);
+			path = "Media Picker";
+			sourceTree = "<group>";
+		};
+		5DF4AA9721636855005BEFEB /* Media Picker Library */ = {
+			isa = PBXGroup;
+			children = (
+				5DF4AA982163687C005BEFEB /* Media Picker Manual.rtf */,
+				5DF4AA992163687C005BEFEB /* MediaPickerProtocol.swift */,
+				5DF4AA9C21636892005BEFEB /* MediaPickerEnums.swift */,
+				5DF4AAA221636ABA005BEFEB /* MediaPickerHelperViewController.swift */,
+				5DF4AAA321636ABA005BEFEB /* MediaPickerHelperViewController.xib */,
+			);
+			path = "Media Picker Library";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +264,11 @@
 				5DDC0C5821633BBA00C4E339 /* LaunchScreen.storyboard in Resources */,
 				5DF4AA8B21636278005BEFEB /* StoryBoardHelperManual.rtf in Resources */,
 				5DDC0C5521633BBA00C4E339 /* Assets.xcassets in Resources */,
+				5DF4AAA521636ABA005BEFEB /* MediaPickerHelperViewController.xib in Resources */,
 				5DDC0C69216344D100C4E339 /* Reachability Document.rtf in Resources */,
+				5DF4AA9A2163687C005BEFEB /* Media Picker Manual.rtf in Resources */,
 				5DF4AA8321635A77005BEFEB /* Reachability.storyboard in Resources */,
+				5DF4AA922163660E005BEFEB /* MediaPicker.storyboard in Resources */,
 				5DDC0C66216342B300C4E339 /* HelperItemsTableViewCell.xib in Resources */,
 				5DDC0C5321633BB900C4E339 /* Main.storyboard in Resources */,
 			);
@@ -260,10 +303,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TOCropViewController/TOCropViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TOCropViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -277,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF4AAA421636ABA005BEFEB /* MediaPickerHelperViewController.swift in Sources */,
 				5DF4AA8621635F87005BEFEB /* StoryBoardHelper.swift in Sources */,
 				5DF4AA7E21634BC5005BEFEB /* ReachabilityListenerProtocol.swift in Sources */,
 				5DDC0C6B2163464300C4E339 /* ReachabilityManager.swift in Sources */,
@@ -284,6 +330,10 @@
 				5DF4AA8921635FDF005BEFEB /* UIViewControllerExtension.swift in Sources */,
 				5DF4AA8D21636331005BEFEB /* HelperItems.swift in Sources */,
 				5DDC0C65216342B200C4E339 /* HelperItemsTableViewCell.swift in Sources */,
+				5DF4AA9D21636892005BEFEB /* MediaPickerEnums.swift in Sources */,
+				5DF4AA9421636625005BEFEB /* MediaPickerViewController.swift in Sources */,
+				5DF4AA9B2163687C005BEFEB /* MediaPickerProtocol.swift in Sources */,
+				5DF4AAA721636F39005BEFEB /* Constants.swift in Sources */,
 				5DDC0C4E21633BB900C4E339 /* AppDelegate.swift in Sources */,
 				5DDC0C612163413800C4E339 /* BaseViewController.swift in Sources */,
 			);

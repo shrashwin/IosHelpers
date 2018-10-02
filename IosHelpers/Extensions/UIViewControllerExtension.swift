@@ -23,4 +23,38 @@ extension UIViewController {
         return appStoryBoard.viewController(viewControllerClass: self)
     }
     
+    func presentAsModal() {
+        modalTransitionStyle = .crossDissolve
+        modalPresentationStyle = .custom
+    }
+    
+    func showAlertWithOkHandler(message: String = "Something went wrong.\nPlease try again later.", okHandler: @escaping () -> ()) {
+        
+        DispatchQueue.main.async {
+            
+            let alert = UIAlertController(title: AppConstants.appName, message: message, preferredStyle: .alert)
+            
+            let okAction =  UIAlertAction(title: "OK", style: .default){
+                handler in
+                okHandler()
+            }
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        
+    }
+    
+    func showAlertOnMainThread(message: String = "Something went wrong.\nPlease try again later.") {
+        
+        DispatchQueue.main.async {
+            
+            let alert = UIAlertController(title: AppConstants.appName, message: message, preferredStyle: .alert)
+            alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        
+    }
+    
 }
