@@ -17,7 +17,45 @@
                     <view key="view" contentMode="scaleToFill" id="plC-qb-7JA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abj-j8-sC7">
+                                <rect key="frame" x="0.0" y="-2" width="375" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reachability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zx7-5b-qtN">
+                                        <rect key="frame" x="141" y="29.5" width="93" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGX-10-0Mg">
+                                        <rect key="frame" x="0.0" y="25" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="V1W-yC-oWQ"/>
+                                            <constraint firstAttribute="height" constant="30" id="mx2-Tv-fVO"/>
+                                        </constraints>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backBtnClick:" destination="7f2-Wc-ldI" eventType="touchUpInside" id="Ek3-ar-0Q2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="mGX-10-0Mg" firstAttribute="leading" secondItem="abj-j8-sC7" secondAttribute="leading" id="CAu-pv-w7o"/>
+                                    <constraint firstItem="mGX-10-0Mg" firstAttribute="centerY" secondItem="zx7-5b-qtN" secondAttribute="centerY" id="Li3-UN-Pef"/>
+                                    <constraint firstAttribute="height" constant="60" id="Nx7-0r-czD"/>
+                                    <constraint firstItem="zx7-5b-qtN" firstAttribute="leading" secondItem="abj-j8-sC7" secondAttribute="leading" constant="141" id="Ybn-rn-Nah"/>
+                                    <constraint firstItem="zx7-5b-qtN" firstAttribute="centerY" secondItem="abj-j8-sC7" secondAttribute="centerY" constant="10" id="ocf-VQ-vJH"/>
+                                    <constraint firstItem="zx7-5b-qtN" firstAttribute="centerX" secondItem="abj-j8-sC7" secondAttribute="centerX" id="pNI-3x-hFm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="abj-j8-sC7" firstAttribute="top" secondItem="2er-Pi-QDd" secondAttribute="top" constant="-22" id="30F-gg-vd4"/>
+                            <constraint firstItem="abj-j8-sC7" firstAttribute="width" secondItem="plC-qb-7JA" secondAttribute="width" id="dHn-AX-oXQ"/>
+                            <constraint firstItem="abj-j8-sC7" firstAttribute="centerX" secondItem="2er-Pi-QDd" secondAttribute="centerX" id="nmD-tJ-ATn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2er-Pi-QDd"/>
                     </view>
                 </viewController>
