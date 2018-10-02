@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhM-Pu-kh2">
-                                <rect key="frame" x="0.0" y="-2" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="-24" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Helpers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv8-9O-3Zc">
-                                        <rect key="frame" x="142" y="29.5" width="91" height="21"/>
+                                        <rect key="frame" x="142" y="64" width="91" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -31,12 +31,12 @@
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Xv8-9O-3Zc" firstAttribute="centerX" secondItem="BhM-Pu-kh2" secondAttribute="centerX" id="4aE-Kl-QRe"/>
-                                    <constraint firstAttribute="height" constant="60" id="8ev-Wp-QuD"/>
-                                    <constraint firstItem="Xv8-9O-3Zc" firstAttribute="centerY" secondItem="BhM-Pu-kh2" secondAttribute="centerY" constant="10" id="bAq-oW-hyD"/>
+                                    <constraint firstAttribute="height" constant="100" id="8ev-Wp-QuD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xv8-9O-3Zc" secondAttribute="bottom" constant="15" id="LjP-N3-M33"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HGG-qQ-URt">
-                                <rect key="frame" x="-0.5" y="58" width="375" height="609"/>
+                                <rect key="frame" x="-0.5" y="76" width="375" height="591"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="JV2-Ki-b3r"/>
@@ -52,7 +52,7 @@
                             <constraint firstItem="HGG-qQ-URt" firstAttribute="width" secondItem="BhM-Pu-kh2" secondAttribute="width" id="Lrs-yd-D45"/>
                             <constraint firstItem="BhM-Pu-kh2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="OFb-WG-fDX"/>
                             <constraint firstItem="HGG-qQ-URt" firstAttribute="centerX" secondItem="BhM-Pu-kh2" secondAttribute="centerX" id="ZMf-Em-G7p"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="BhM-Pu-kh2" secondAttribute="top" constant="22" id="e2z-kU-wQB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="BhM-Pu-kh2" secondAttribute="top" constant="44" id="e2z-kU-wQB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

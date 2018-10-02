@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardAvoidingViewController" customModule="Crunch_Time" customModuleProvider="target">
+            <connections>
+                <outlet property="accessoryBar" destination="iN0-l3-epB" id="ejp-oZ-26j"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AccessoryBar" customModule="Crunch_Time" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8h-2h-Rca">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="0Tk-7m-lW0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7k-45-7YZ">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Fo2-Hv-CL1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="25"/>
+                    <state key="normal" title="&lt;">
+                        <color key="titleColor" red="0.23529411759999999" green="0.26274509800000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="previousButtonTappedWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="Icg-NA-WDg"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ptr-v9-654" userLabel="Seperator">
+                    <rect key="frame" x="60" y="7" width="1" height="30"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GIL-4l-S0B"/>
+                        <constraint firstAttribute="width" constant="1" id="e1l-wW-ITU"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AW2-Xh-aL7">
+                    <rect key="frame" x="61" y="0.0" width="60" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="9rV-rh-baB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="25"/>
+                    <state key="normal" title="&gt;">
+                        <color key="titleColor" red="0.23529411759999999" green="0.26274509800000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nextButtonTappedWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="yZK-Ad-SYW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8l-gB-0kr">
+                    <rect key="frame" x="260" y="0.0" width="60" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="5Mv-JC-cQI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" red="0.23529411759999999" green="0.26274509800000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doneButtonTappedWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="szZ-8K-urz"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hm-Mw-31f">
+                    <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BMa-CR-ZjY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AW2-Xh-aL7" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="0q0-J2-crj"/>
+                <constraint firstItem="x8h-2h-Rca" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0xI-ie-kAL"/>
+                <constraint firstItem="B7k-45-7YZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1Yc-Zz-g6X"/>
+                <constraint firstItem="Ptr-v9-654" firstAttribute="leading" secondItem="B7k-45-7YZ" secondAttribute="trailing" id="3Wy-cW-NqT"/>
+                <constraint firstItem="AW2-Xh-aL7" firstAttribute="leading" secondItem="Ptr-v9-654" secondAttribute="trailing" id="71i-SP-hub"/>
+                <constraint firstItem="x8h-2h-Rca" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8PA-af-fQg"/>
+                <constraint firstItem="Ptr-v9-654" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="AK3-EZ-vlg"/>
+                <constraint firstItem="B7k-45-7YZ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="PHN-0R-i8a"/>
+                <constraint firstItem="6hm-Mw-31f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U1z-R7-RS7"/>
+                <constraint firstItem="y8l-gB-0kr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VRw-qj-JOu"/>
+                <constraint firstAttribute="bottom" secondItem="6hm-Mw-31f" secondAttribute="bottom" id="asw-jn-QdZ"/>
+                <constraint firstItem="B7k-45-7YZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="b1C-NK-dev"/>
+                <constraint firstItem="y8l-gB-0kr" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="guS-G4-56z"/>
+                <constraint firstItem="AW2-Xh-aL7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hjv-Uw-Trr"/>
+                <constraint firstAttribute="trailing" secondItem="x8h-2h-Rca" secondAttribute="trailing" id="lkM-Bh-MK5"/>
+                <constraint firstAttribute="trailing" secondItem="y8l-gB-0kr" secondAttribute="trailing" id="qhQ-s5-zj6"/>
+                <constraint firstAttribute="trailing" secondItem="6hm-Mw-31f" secondAttribute="trailing" id="ucT-Lu-QL2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nextBtn" destination="AW2-Xh-aL7" id="zIo-66-iUo"/>
+                <outlet property="previousBtn" destination="B7k-45-7YZ" id="kC4-1o-Ke6"/>
+                <outlet property="seperatorView" destination="Ptr-v9-654" id="Pat-dd-yUN"/>
+            </connections>
+        </view>
+    </objects>
+</document>
