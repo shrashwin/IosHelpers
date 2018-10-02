@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5DDC0C4E21633BB900C4E339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDC0C4D21633BB900C4E339 /* AppDelegate.swift */; };
-		5DDC0C5021633BB900C4E339 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDC0C4F21633BB900C4E339 /* ViewController.swift */; };
 		5DDC0C5321633BB900C4E339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDC0C5121633BB900C4E339 /* Main.storyboard */; };
 		5DDC0C5521633BBA00C4E339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DDC0C5421633BBA00C4E339 /* Assets.xcassets */; };
 		5DDC0C5821633BBA00C4E339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDC0C5621633BBA00C4E339 /* LaunchScreen.storyboard */; };
+		5DDC0C612163413800C4E339 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDC0C602163413800C4E339 /* BaseViewController.swift */; };
+		5DDC0C65216342B200C4E339 /* HelperItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDC0C63216342B200C4E339 /* HelperItemsTableViewCell.swift */; };
+		5DDC0C66216342B300C4E339 /* HelperItemsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DDC0C64216342B200C4E339 /* HelperItemsTableViewCell.xib */; };
+		5DDC0C69216344D100C4E339 /* Reachability Document.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5DDC0C68216344D100C4E339 /* Reachability Document.rtf */; };
+		5DDC0C6B2163464300C4E339 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDC0C6A2163464300C4E339 /* ReachabilityManager.swift */; };
+		5DF4AA7E21634BC5005BEFEB /* ReachabilityListenerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA7D21634BC5005BEFEB /* ReachabilityListenerProtocol.swift */; };
+		5DF4AA8021634CD7005BEFEB /* ReachabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA7F21634CD7005BEFEB /* ReachabilityViewController.swift */; };
 		FA84C7670EC62104F8AA81A2 /* Pods_IosHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA27466D25C3697913DA68E /* Pods_IosHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +25,17 @@
 		1BA27466D25C3697913DA68E /* Pods_IosHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DDC0C4A21633BB900C4E339 /* IosHelpers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosHelpers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DDC0C4D21633BB900C4E339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5DDC0C4F21633BB900C4E339 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5DDC0C5221633BB900C4E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DDC0C5421633BBA00C4E339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DDC0C5721633BBA00C4E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DDC0C5921633BBA00C4E339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DDC0C602163413800C4E339 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5DDC0C63216342B200C4E339 /* HelperItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperItemsTableViewCell.swift; sourceTree = "<group>"; };
+		5DDC0C64216342B200C4E339 /* HelperItemsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelperItemsTableViewCell.xib; sourceTree = "<group>"; };
+		5DDC0C68216344D100C4E339 /* Reachability Document.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Reachability Document.rtf"; sourceTree = "<group>"; };
+		5DDC0C6A2163464300C4E339 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		5DF4AA7D21634BC5005BEFEB /* ReachabilityListenerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityListenerProtocol.swift; sourceTree = "<group>"; };
+		5DF4AA7F21634CD7005BEFEB /* ReachabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityViewController.swift; sourceTree = "<group>"; };
 		713DDE5117046208BFD46A1A /* Pods-IosHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		E8F26EB79F488220D9A632E2 /* Pods-IosHelpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,14 +90,44 @@
 		5DDC0C4C21633BB900C4E339 /* IosHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				5DDC0C67216344A500C4E339 /* Reachability */,
+				5DDC0C5F2163412500C4E339 /* Base View Controller */,
 				5DDC0C4D21633BB900C4E339 /* AppDelegate.swift */,
-				5DDC0C4F21633BB900C4E339 /* ViewController.swift */,
 				5DDC0C5121633BB900C4E339 /* Main.storyboard */,
 				5DDC0C5421633BBA00C4E339 /* Assets.xcassets */,
 				5DDC0C5621633BBA00C4E339 /* LaunchScreen.storyboard */,
 				5DDC0C5921633BBA00C4E339 /* Info.plist */,
 			);
 			path = IosHelpers;
+			sourceTree = "<group>";
+		};
+		5DDC0C5F2163412500C4E339 /* Base View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5DDC0C622163429600C4E339 /* Base View Table Cell */,
+				5DDC0C602163413800C4E339 /* BaseViewController.swift */,
+			);
+			path = "Base View Controller";
+			sourceTree = "<group>";
+		};
+		5DDC0C622163429600C4E339 /* Base View Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5DDC0C63216342B200C4E339 /* HelperItemsTableViewCell.swift */,
+				5DDC0C64216342B200C4E339 /* HelperItemsTableViewCell.xib */,
+			);
+			path = "Base View Table Cell";
+			sourceTree = "<group>";
+		};
+		5DDC0C67216344A500C4E339 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				5DDC0C6A2163464300C4E339 /* ReachabilityManager.swift */,
+				5DDC0C68216344D100C4E339 /* Reachability Document.rtf */,
+				5DF4AA7D21634BC5005BEFEB /* ReachabilityListenerProtocol.swift */,
+				5DF4AA7F21634CD7005BEFEB /* ReachabilityViewController.swift */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +141,7 @@
 				5DDC0C4621633BB900C4E339 /* Sources */,
 				5DDC0C4721633BB900C4E339 /* Frameworks */,
 				5DDC0C4821633BB900C4E339 /* Resources */,
+				834CA2B91A86BD69B4DEADB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +192,8 @@
 			files = (
 				5DDC0C5821633BBA00C4E339 /* LaunchScreen.storyboard in Resources */,
 				5DDC0C5521633BBA00C4E339 /* Assets.xcassets in Resources */,
+				5DDC0C69216344D100C4E339 /* Reachability Document.rtf in Resources */,
+				5DDC0C66216342B300C4E339 /* HelperItemsTableViewCell.xib in Resources */,
 				5DDC0C5321633BB900C4E339 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +219,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		834CA2B91A86BD69B4DEADB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -181,8 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DDC0C5021633BB900C4E339 /* ViewController.swift in Sources */,
+				5DF4AA7E21634BC5005BEFEB /* ReachabilityListenerProtocol.swift in Sources */,
+				5DDC0C6B2163464300C4E339 /* ReachabilityManager.swift in Sources */,
+				5DF4AA8021634CD7005BEFEB /* ReachabilityViewController.swift in Sources */,
+				5DDC0C65216342B200C4E339 /* HelperItemsTableViewCell.swift in Sources */,
 				5DDC0C4E21633BB900C4E339 /* AppDelegate.swift in Sources */,
+				5DDC0C612163413800C4E339 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
