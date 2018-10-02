@@ -28,6 +28,9 @@
 		5DF4AA9A2163687C005BEFEB /* Media Picker Manual.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AA982163687C005BEFEB /* Media Picker Manual.rtf */; };
 		5DF4AA9B2163687C005BEFEB /* MediaPickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA992163687C005BEFEB /* MediaPickerProtocol.swift */; };
 		5DF4AA9D21636892005BEFEB /* MediaPickerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AA9C21636892005BEFEB /* MediaPickerEnums.swift */; };
+		5DF4AAA421636ABA005BEFEB /* MediaPickerHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AAA221636ABA005BEFEB /* MediaPickerHelperViewController.swift */; };
+		5DF4AAA521636ABA005BEFEB /* MediaPickerHelperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AAA321636ABA005BEFEB /* MediaPickerHelperViewController.xib */; };
+		5DF4AAA721636F39005BEFEB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AAA621636F39005BEFEB /* Constants.swift */; };
 		FA84C7670EC62104F8AA81A2 /* Pods_IosHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA27466D25C3697913DA68E /* Pods_IosHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,9 @@
 		5DF4AA982163687C005BEFEB /* Media Picker Manual.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Media Picker Manual.rtf"; sourceTree = "<group>"; };
 		5DF4AA992163687C005BEFEB /* MediaPickerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerProtocol.swift; sourceTree = "<group>"; };
 		5DF4AA9C21636892005BEFEB /* MediaPickerEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerEnums.swift; sourceTree = "<group>"; };
+		5DF4AAA221636ABA005BEFEB /* MediaPickerHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerHelperViewController.swift; sourceTree = "<group>"; };
+		5DF4AAA321636ABA005BEFEB /* MediaPickerHelperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaPickerHelperViewController.xib; sourceTree = "<group>"; };
+		5DF4AAA621636F39005BEFEB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		713DDE5117046208BFD46A1A /* Pods-IosHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		E8F26EB79F488220D9A632E2 /* Pods-IosHelpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +126,7 @@
 				5DDC0C5421633BBA00C4E339 /* Assets.xcassets */,
 				5DDC0C5621633BBA00C4E339 /* LaunchScreen.storyboard */,
 				5DDC0C5921633BBA00C4E339 /* Info.plist */,
+				5DF4AAA621636F39005BEFEB /* Constants.swift */,
 			);
 			path = IosHelpers;
 			sourceTree = "<group>";
@@ -188,6 +195,8 @@
 				5DF4AA982163687C005BEFEB /* Media Picker Manual.rtf */,
 				5DF4AA992163687C005BEFEB /* MediaPickerProtocol.swift */,
 				5DF4AA9C21636892005BEFEB /* MediaPickerEnums.swift */,
+				5DF4AAA221636ABA005BEFEB /* MediaPickerHelperViewController.swift */,
+				5DF4AAA321636ABA005BEFEB /* MediaPickerHelperViewController.xib */,
 			);
 			path = "Media Picker Library";
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 				5DDC0C5821633BBA00C4E339 /* LaunchScreen.storyboard in Resources */,
 				5DF4AA8B21636278005BEFEB /* StoryBoardHelperManual.rtf in Resources */,
 				5DDC0C5521633BBA00C4E339 /* Assets.xcassets in Resources */,
+				5DF4AAA521636ABA005BEFEB /* MediaPickerHelperViewController.xib in Resources */,
 				5DDC0C69216344D100C4E339 /* Reachability Document.rtf in Resources */,
 				5DF4AA9A2163687C005BEFEB /* Media Picker Manual.rtf in Resources */,
 				5DF4AA8321635A77005BEFEB /* Reachability.storyboard in Resources */,
@@ -312,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF4AAA421636ABA005BEFEB /* MediaPickerHelperViewController.swift in Sources */,
 				5DF4AA8621635F87005BEFEB /* StoryBoardHelper.swift in Sources */,
 				5DF4AA7E21634BC5005BEFEB /* ReachabilityListenerProtocol.swift in Sources */,
 				5DDC0C6B2163464300C4E339 /* ReachabilityManager.swift in Sources */,
@@ -322,6 +333,7 @@
 				5DF4AA9D21636892005BEFEB /* MediaPickerEnums.swift in Sources */,
 				5DF4AA9421636625005BEFEB /* MediaPickerViewController.swift in Sources */,
 				5DF4AA9B2163687C005BEFEB /* MediaPickerProtocol.swift in Sources */,
+				5DF4AAA721636F39005BEFEB /* Constants.swift in Sources */,
 				5DDC0C4E21633BB900C4E339 /* AppDelegate.swift in Sources */,
 				5DDC0C612163413800C4E339 /* BaseViewController.swift in Sources */,
 			);

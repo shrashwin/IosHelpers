@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol ImagePickerProtocol : class {
+protocol MediaPickerProtocol : class {
     func didPick(image: UIImage)
     func didPickVideo(withPath : URL)
 }
 
-extension ImagePickerProtocol {
+extension MediaPickerProtocol {
     func didPick(image: UIImage) {}
     func didPickVideo(withPath : URL) {}
 }
