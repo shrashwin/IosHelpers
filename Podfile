@@ -6,5 +6,6 @@ target 'IosHelpers' do
   use_frameworks!
 
   # Pods for IosHelpers
+  pod 'ReachabilitySwift', '~> 3'
 
 end
