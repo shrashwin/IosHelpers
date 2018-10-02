@@ -20,16 +20,29 @@ class ReachabilityViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        //add listener of the reachability status change
         ReachabilityManager.shared.addListener(listener: self)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        //remove listener of the reachability status change
         ReachabilityManager.shared.removeListener(listener: self)
     }
 
+    
 }
 
+// MARK: - Button Click Events
+extension ReachabilityViewController {
+    
+    @IBAction func backBtnClick(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
+
+// MARK: - Reachability listener for network status updates
 extension ReachabilityViewController: NetworkStatusListener {
     
     func networkStatusDidChange(status: Reachability.NetworkStatus) {
