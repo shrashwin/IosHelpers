@@ -24,6 +24,8 @@ class BaseViewController: UIViewController {
         let nib = UINib(nibName: HelperItemsTableViewCell.cellIdentifier, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: HelperItemsTableViewCell.cellIdentifier)
     }
+    
+   
 
 }
 
@@ -44,6 +46,12 @@ extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let storyBoard = UIStoryboard(name: "Reachability", bundle: nil)
+        
+        if let reachabilityVC = storyBoard.instantiateViewController(withIdentifier: "ReachabilityViewController") as? ReachabilityViewController {
+            navigationController?.pushViewController(reachabilityVC, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
