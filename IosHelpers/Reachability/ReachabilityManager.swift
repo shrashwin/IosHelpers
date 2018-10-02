@@ -9,7 +9,6 @@
 import Foundation
 import ReachabilitySwift
 
-
 class ReachabilityManager: NSObject {
     
     //shared instance of reachability manager
@@ -25,6 +24,8 @@ class ReachabilityManager: NSObject {
     //Reachability instance for Network status monitoring
     let reachability = Reachability()!
     
+    //Array of delegates which are interested to listen to network status change
+    var listeners = [NetworkStatusListener]()
     
     /// Called whenever there is a change in NetworkReachibility Status
     ///
@@ -41,6 +42,11 @@ class ReachabilityManager: NSObject {
             debugPrint("Network reachable through WiFi")
         case .reachableViaWWAN:
             debugPrint("Network reachable through Cellular Data")
+        }
+        
+        // Sending message to each of the delegates
+        for listener in listeners {
+            listener.networkStatusDidChange(status: reachabilityStatus)
         }
         
     }
@@ -64,6 +70,21 @@ class ReachabilityManager: NSObject {
         NotificationCenter.default.removeObserver(self,
                                                   name: ReachabilityChangedNotification,
                                                   object: reachability)
+    }
+    
+    
+    /// Adds a new listener to the listeners array
+    ///
+    /// - parameter delegate: a new listener
+    func addListener(listener: NetworkStatusListener){
+        listeners.append(listener)
+    }
+    
+    /// Removes a listener from listeners array
+    ///
+    /// - parameter delegate: the listener which is to be removed
+    func removeListener(listener: NetworkStatusListener){
+        listeners = listeners.filter{ $0 !== listener}
     }
     
 }

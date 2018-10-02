@@ -24,6 +24,8 @@ class BaseViewController: UIViewController {
         let nib = UINib(nibName: HelperItemsTableViewCell.cellIdentifier, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: HelperItemsTableViewCell.cellIdentifier)
     }
+    
+   
 
 }
 
