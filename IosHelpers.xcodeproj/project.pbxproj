@@ -33,6 +33,7 @@
 		5DF4AABC21639717005BEFEB /* LocationServiceExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AABB21639717005BEFEB /* LocationServiceExampleViewController.swift */; };
 		5DF4AABF2163972F005BEFEB /* Location Service Manual.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5DF4AABE2163972F005BEFEB /* Location Service Manual.rtf */; };
 		5DF4AAC12163973A005BEFEB /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AAC02163973A005BEFEB /* LocationService.swift */; };
+		5DF4AAC321645492005BEFEB /* LocationListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4AAC221645492005BEFEB /* LocationListener.swift */; };
 		FA84C7670EC62104F8AA81A2 /* Pods_IosHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA27466D25C3697913DA68E /* Pods_IosHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		5DF4AABB21639717005BEFEB /* LocationServiceExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceExampleViewController.swift; sourceTree = "<group>"; };
 		5DF4AABE2163972F005BEFEB /* Location Service Manual.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Location Service Manual.rtf"; sourceTree = "<group>"; };
 		5DF4AAC02163973A005BEFEB /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		5DF4AAC221645492005BEFEB /* LocationListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListener.swift; sourceTree = "<group>"; };
 		713DDE5117046208BFD46A1A /* Pods-IosHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		E8F26EB79F488220D9A632E2 /* Pods-IosHelpers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosHelpers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosHelpers/Pods-IosHelpers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,6 +229,7 @@
 			children = (
 				5DF4AABE2163972F005BEFEB /* Location Service Manual.rtf */,
 				5DF4AAC02163973A005BEFEB /* LocationService.swift */,
+				5DF4AAC221645492005BEFEB /* LocationListener.swift */,
 			);
 			path = "Location Service";
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				5DF4AAC12163973A005BEFEB /* LocationService.swift in Sources */,
 				5DF4AA8621635F87005BEFEB /* StoryBoardHelper.swift in Sources */,
 				5DF4AA7E21634BC5005BEFEB /* ReachabilityListenerProtocol.swift in Sources */,
+				5DF4AAC321645492005BEFEB /* LocationListener.swift in Sources */,
 				5DDC0C6B2163464300C4E339 /* ReachabilityManager.swift in Sources */,
 				5DF4AA8021634CD7005BEFEB /* ReachabilityViewController.swift in Sources */,
 				5DF4AAAB21638981005BEFEB /* KeyboardAvoidingViewController.swift in Sources */,

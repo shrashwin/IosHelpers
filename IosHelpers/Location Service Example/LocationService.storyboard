@@ -48,15 +48,27 @@
                                     <constraint firstItem="e4V-Za-qs9" firstAttribute="centerX" secondItem="3za-O2-Hu1" secondAttribute="centerX" id="mbv-U8-cK2"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Service" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36i-Oc-4Pb">
+                                <rect key="frame" x="40" y="333.5" width="295" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qIq-Yh-0Qm" firstAttribute="top" secondItem="3za-O2-Hu1" secondAttribute="top" constant="44" id="0p8-2j-ADm"/>
+                            <constraint firstItem="36i-Oc-4Pb" firstAttribute="leading" secondItem="qIq-Yh-0Qm" secondAttribute="leading" constant="40" id="5AO-f0-Bl2"/>
+                            <constraint firstItem="36i-Oc-4Pb" firstAttribute="centerY" secondItem="qIq-Yh-0Qm" secondAttribute="centerY" id="5Jf-Oq-kt2"/>
                             <constraint firstItem="3za-O2-Hu1" firstAttribute="width" secondItem="AWJ-Qk-65W" secondAttribute="width" id="HOy-8b-69z"/>
                             <constraint firstItem="3za-O2-Hu1" firstAttribute="centerX" secondItem="qIq-Yh-0Qm" secondAttribute="centerX" id="VcW-gk-0bY"/>
+                            <constraint firstItem="36i-Oc-4Pb" firstAttribute="centerX" secondItem="qIq-Yh-0Qm" secondAttribute="centerX" id="taj-sS-Elf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qIq-Yh-0Qm"/>
                     </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="36i-Oc-4Pb" id="bZN-ew-hjl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ak2-YO-gb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

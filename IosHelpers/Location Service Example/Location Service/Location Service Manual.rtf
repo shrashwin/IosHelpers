@@ -1,5 +1,60 @@
-{\rtf1\ansi\ansicpg1252\cocoartf949
-{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red255\green255\blue255;
+\red0\green116\blue0;\red170\green13\blue145;\red63\green110\blue116;\red38\green71\blue75;\red28\green0\blue207;
+\red46\green13\blue110;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\csgenericrgb\c100000\c100000\c100000;\cssrgb\c100000\c100000\c100000;
+\csgenericrgb\c0\c45600\c0;\csgenericrgb\c66500\c5200\c56900;\csgenericrgb\c24700\c43100\c45600;\csgenericrgb\c14900\c27800\c29400;\csgenericrgb\c11000\c0\c81000;
+\csgenericrgb\c18100\c5200\c43100;}
 \margl1440\margr1440\vieww9000\viewh8400\viewkind0
-}
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Location Service Manual:\
+\
+Location service is a singleton class made for location updates handling\
+\
+Steps:\
+1. Copy the "Location Service" folder and add it to your Project.\
+\
+2. Make sure you have added the \
+
+\f1\fs30 \cf2 \cb3 NSLocationWhenInUseUsageDescription if you are going to get location only when you use the app, but if you want to always get the location add following in the info.plist file.\
+\
+a. NSLocationAlwaysAndWhenInUseUsageDescription\
+b. NSLocationAlwaysUsageDescription\
+and enable background modes for location on in project capabilities\
+\
+3. To start the location update, which is preferred in 
+\f0\fs24 \cf0 \cb1 App delegate  
+\i\fs42 \cb4 \expnd0\expndtw0\kerning0
+func application(_:didFinishLaunchingWithOptions:) , or any where you like, add following line of code\
+\
+\pard\tx741\pardeftab741\pardirnatural\partightenfactor0
+
+\f1\i0\fs30 \cf2 \cb3 \kerning1\expnd0\expndtw0  \cf5 \cb3 // Initialize the location service first
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf2 \cb3         \cf6 let\cf2  locationResponse = \cf7 LocationService\cf2 .\cf7 shared\cf2 .\cf8 \cb3 isLocationEnabled\cf2 \cb3 (withAuthorizationWhenInUse: \cf6 false\cf2 ) // if true : Location when in use, if false: Location always in use
+\f0\fs24 \cf0 \cb3 \
+
+\f1\fs30 \cf2 \cb3         
+\f0\fs24 \cf0 \cb3 \
+
+\f1\fs30 \cf2 \cb3         \cf6 if\cf2  \cf6 let\cf2  errorMsg = locationResponse.\cf9 \cb3 1\cf2 \cb3  \{
+\f0\fs24 \cf0 \cb3 \
+
+\f1\fs30 \cf2 \cb3             \cf10 \cb3 print\cf2 \cb3 (errorMsg)
+\f0\fs24 \cf0 \cb3 \
+
+\f1\fs30 \cf2 \cb3         \}
+\f0\fs24 \cf0 \cb3 \
+
+\f1\fs30 \cf2 \cb3         \cf6 else\cf2  \{
+\f0\fs24 \cf0 \cb3 \
+
+\f1\fs30 \cf2 \cb3             \cf7 LocationService\cf2 .\cf7 shared\cf2 .\cf8 \cb3 startUpdatingLocation\cf2 \cb3 ()
+\f0\fs24 \cf0 \cb3 \
+
+\f1\fs30 \cf2 \cb3         \}\cf6 \
+\
+this starts the location service and starts updating location}

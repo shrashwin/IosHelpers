@@ -16,37 +16,48 @@ class LocationService: NSObject, CLLocationManagerDelegate {
         return instance
     }()
     
+    var isLocationOnlyWhenInUse = true
     var locationManager:CLLocationManager?
     var currentLocation:CLLocation?
+    var listeners = [LocationListener]()
     
     override init() {
         super.init()
         
-        self.locationManager = CLLocationManager()
-        self.locationManager?.delegate = self
-        self.locationManager?.requestWhenInUseAuthorization()
-        self.locationManager?.startUpdatingLocation()
-        
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+    
+    }
+    
+    func requestAuthorization() {
+        if isLocationOnlyWhenInUse {
+            locationManager?.requestWhenInUseAuthorization()
+        }
+        else {
+            locationManager?.requestAlwaysAuthorization()
+        }
     }
     
     @discardableResult
-    func isLocationEnabled() -> Bool {
-        
+    func isLocationEnabled(withAuthorizationWhenInUse: Bool) -> (Bool,String?) {
+        isLocationOnlyWhenInUse = withAuthorizationWhenInUse
         if CLLocationManager.locationServicesEnabled() {
             
-            if getAuthorizationStatus().rawValue < 3  && getAuthorizationStatus().rawValue > 0{
-                
-                return false
-            }
-            else if getAuthorizationStatus().rawValue == 0 {
-                
-                self.locationManager?.requestWhenInUseAuthorization()
-            }
+            switch getAuthorizationStatus() {
             
-            return true
-            
+            case .restricted:
+                return (false, "Location ussage has been restricted. Please enable it in your settings")
+            case .denied:
+                return (false, "Location ussage has been denied. Please enable it in your settings")
+            case .notDetermined:
+                requestAuthorization()
+                return (true,nil)
+            case .authorizedWhenInUse, .authorizedAlways:
+                return (true,nil)
+                
+            }
         }
-        return false
+        return (false,"Location service could not be enabled")
     }
     
     
@@ -55,18 +66,21 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     }
     
     func startUpdatingLocation() {
-        
-        self.locationManager?.startUpdatingLocation()
+        locationManager?.startUpdatingLocation()
     }
     
     func stopUpdatingLocation() {
-        
+        locationManager?.stopUpdatingLocation()
     }
     
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        self.currentLocation = locations.last
+        currentLocation = locations.last
+        // Sending message to each of the delegates
+        for listener in listeners {
+            listener.locationDidChange(location: currentLocation!)
+        }
         
     }
     
@@ -77,13 +91,24 @@ class LocationService: NSObject, CLLocationManagerDelegate {
         
     }
     
-    func updateLocation(currentLocation:CLLocation){
-        //let lat = currentLocation.coordinate.latitude
-        //let lon = currentLocation.coordinate.longitude
-    }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "authorizationStatusChanged"), object: nil)
+    }
+    
+    
+    /// Adds a new listener to the listeners array
+    ///
+    /// - parameter delegate: a new listener
+    func addListener(listener: LocationListener){
+        listeners.append(listener)
+    }
+    
+    /// Removes a listener from listeners array
+    ///
+    /// - parameter delegate: the listener which is to be removed
+    func removeListener(listener: LocationListener){
+        listeners = listeners.filter{ $0 !== listener}
     }
     
 }
