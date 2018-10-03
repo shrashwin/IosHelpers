@@ -54,6 +54,11 @@ extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
         case .KeyboardAvoidingViewController:
             let keyboardAvoidingVC = KeyBoardAvoidingExampleViewController.instantiateFrom(appStoryBoard: .KeyboardAvoiding)
             navigationController?.pushViewController(keyboardAvoidingVC, animated: true)
+            
+        case .OverLappingCollectionView:
+            
+            let overlappingCollectionViewVC = OverLappingCollectionViewExample.instantiateFrom(appStoryBoard: .OverlappingCollectionView)
+            navigationController?.pushViewController(overlappingCollectionViewVC, animated: true)
        
         }
         

@@ -13,14 +13,16 @@ enum HelperItems {
     
     case Reachability
     case KeyboardAvoidingViewController
+    case OverLappingCollectionView
 
-    static let items = [Reachability, KeyboardAvoidingViewController]
+    static let items = [Reachability, KeyboardAvoidingViewController, OverLappingCollectionView]
     
     var descriptionTxt: String {
         switch self {
         
         case .Reachability: return "Reachability"
         case .KeyboardAvoidingViewController: return "KeyboardAvoiding View Controller"
+        case .OverLappingCollectionView: return "Overlapping Collection View"
         
         }
     }
