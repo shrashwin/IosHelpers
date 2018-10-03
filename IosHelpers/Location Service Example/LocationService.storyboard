@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location Service Example View Controller-->
+        <scene sceneID="8eU-WM-8mg">
+            <objects>
+                <viewController storyboardIdentifier="LocationServiceExampleViewController" id="gky-uC-I2z" customClass="LocationServiceExampleViewController" customModule="IosHelpers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AWJ-Qk-65W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3za-O2-Hu1">
+                                <rect key="frame" x="0.0" y="-24" width="375" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4V-Za-qs9">
+                                        <rect key="frame" x="124.5" y="64" width="127" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcZ-Ev-vkJ">
+                                        <rect key="frame" x="0.0" y="59.5" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="LZb-7a-2sV"/>
+                                            <constraint firstAttribute="width" constant="70" id="cmW-G0-Sfk"/>
+                                        </constraints>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backBtnClick:" destination="gky-uC-I2z" eventType="touchUpInside" id="iJ7-4f-MgY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="AcZ-Ev-vkJ" firstAttribute="centerY" secondItem="e4V-Za-qs9" secondAttribute="centerY" id="9E7-2K-KHj"/>
+                                    <constraint firstAttribute="bottom" secondItem="e4V-Za-qs9" secondAttribute="bottom" constant="15" id="WzD-is-lbn"/>
+                                    <constraint firstAttribute="height" constant="100" id="eaU-cv-gVK"/>
+                                    <constraint firstItem="AcZ-Ev-vkJ" firstAttribute="leading" secondItem="3za-O2-Hu1" secondAttribute="leading" id="jn2-zh-uvu"/>
+                                    <constraint firstItem="e4V-Za-qs9" firstAttribute="centerX" secondItem="3za-O2-Hu1" secondAttribute="centerX" id="mbv-U8-cK2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Service" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36i-Oc-4Pb">
+                                <rect key="frame" x="40" y="333.5" width="295" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qIq-Yh-0Qm" firstAttribute="top" secondItem="3za-O2-Hu1" secondAttribute="top" constant="44" id="0p8-2j-ADm"/>
+                            <constraint firstItem="36i-Oc-4Pb" firstAttribute="leading" secondItem="qIq-Yh-0Qm" secondAttribute="leading" constant="40" id="5AO-f0-Bl2"/>
+                            <constraint firstItem="36i-Oc-4Pb" firstAttribute="centerY" secondItem="qIq-Yh-0Qm" secondAttribute="centerY" id="5Jf-Oq-kt2"/>
+                            <constraint firstItem="3za-O2-Hu1" firstAttribute="width" secondItem="AWJ-Qk-65W" secondAttribute="width" id="HOy-8b-69z"/>
+                            <constraint firstItem="3za-O2-Hu1" firstAttribute="centerX" secondItem="qIq-Yh-0Qm" secondAttribute="centerX" id="VcW-gk-0bY"/>
+                            <constraint firstItem="36i-Oc-4Pb" firstAttribute="centerX" secondItem="qIq-Yh-0Qm" secondAttribute="centerX" id="taj-sS-Elf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qIq-Yh-0Qm"/>
+                    </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="36i-Oc-4Pb" id="bZN-ew-hjl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ak2-YO-gb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="-197"/>
+        </scene>
+    </scenes>
+</document>

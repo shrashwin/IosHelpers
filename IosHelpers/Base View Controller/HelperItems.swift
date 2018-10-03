@@ -13,14 +13,16 @@ enum HelperItems {
     
     case Reachability
     case KeyboardAvoidingViewController
+    case LocationService
 
-    static let items = [Reachability, KeyboardAvoidingViewController]
+    static let items = [Reachability, KeyboardAvoidingViewController, LocationService]
     
     var descriptionTxt: String {
         switch self {
         
         case .Reachability: return "Reachability"
         case .KeyboardAvoidingViewController: return "KeyboardAvoiding View Controller"
+        case .LocationService: return "Location Service"
         
         }
     }
