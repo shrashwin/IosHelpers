@@ -19,7 +19,7 @@ class ExampleCollectionViewCell: UICollectionViewCell {
         // Initialization code
         contentWrapper.layer.borderColor = UIColor.white.cgColor
         contentWrapper.layer.borderWidth = 2.0
-        contentWrapper.layer.cornerRadius = 5.0
+        contentWrapper.layer.cornerRadius = 4.0
         contentWrapper.layer.masksToBounds = true
     }
 
